@@ -12,13 +12,15 @@ public class Validation {
 		
 		Random randomMaker = new Random();
 		
-		int randomNumber = randomMaker.nextInt(5);
 		
-		System.out.println(randomNumber);
+		
+		
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
 		for(int i=0;i<10;i++) {
-		if(randomNumber == 0) {JOptionPane.showMessageDialog(null, "you're foot fungus is almost nonexistent");}
+			int randomNumber = randomMaker.nextInt(5);
+			System.out.println(randomNumber);
+		if(randomNumber == 0) {JOptionPane.showMessageDialog(null, "Your foot fungus is almost nonexistent");}
 		else if(randomNumber == 1) {JOptionPane.showMessageDialog(null, "You would survive the zombie apocalypse because you're as ugly as an ugly person");}
 		else if(randomNumber == 2) {JOptionPane.showMessageDialog(null, "Are you always so stupid or is today a special occasion?");}
 		else if(randomNumber == 3) {JOptionPane.showMessageDialog(null, "As an outsider, what do you think of the human race?");}
